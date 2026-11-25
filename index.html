@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Danh sách sản phẩm</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>Danh sách sản phẩm</h1>
+      <p>Tìm kiếm nhanh sản phẩm theo tên (không phân biệt chữ hoa / chữ thường)</p>
+    </header>
+
+    <section class="search-box" aria-label="Tìm kiếm sản phẩm">
+      <input
+        type="search"
+        id="searchInput"
+        placeholder="Nhập tên sản phẩm cần tìm (vd: tai nghe, bàn phím...)"
+        autocomplete="off"
+      />
+      <button type="button" id="clearBtn" aria-label="Xóa từ khóa">Xóa</button>
+    </section>
+
+    <p id="statusText" class="status-text"></p>
+    <section id="productGrid" class="product-grid" aria-live="polite"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
